@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# dotenv
+.env
+.env.*
+*.env
+s
+# Logs
+*.log
+
+# Airflow
+airflow/logs/
+
+# DBT
+dbt/target/
+dbt/logs/
+
+# VSCode
+.vscode/
