@@ -1,0 +1,12 @@
+my_project:
+  outputs:
+    dev:
+      type: postgres
+      host: host.docker.internal
+      user: postgres
+      pass: "123456"
+      port: 5432
+      dbname: postgres
+      schema: public
+      threads: 4
+  target: dev

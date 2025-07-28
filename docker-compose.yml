@@ -25,13 +25,26 @@ services:
       - db
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-
+      - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - my_network
     command: >
       bash -c "airflow db migrate && airflow standalone"
 
-    
+  dbt: 
+    container_name: dbt_container
+    image: ghcr.io/dbt-labs/dbt-postgres:1.9.latest
+    volumes:
+      - ./dbt/my_project:/usr/app
+      - ./dbt:/root/.dbt
+    working_dir: /usr/app
+    environment: 
+      DBT_PROFILES_DIR: "/root/.dbt"
+    depends_on:
+      - db
+    networks:
+      - my_network
+    command: run
 
     
 volumes:
