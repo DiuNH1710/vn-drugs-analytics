@@ -31,6 +31,9 @@ services:
     command: >
       bash -c "airflow db migrate && airflow standalone"
 
+    
+
+    
 volumes:
   postgres-data:
   
