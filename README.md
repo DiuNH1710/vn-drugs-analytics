@@ -10,6 +10,7 @@ Perform analytical queries using dbt models.
 Visualize insights on Superset dashboards.
 
 ## 🏗️ System Architecture
+![alt text](image.png)
 ```
 PostgreSQL <-> Airflow (ETL + Geocoding) <-> dbt (Data Modeling) <-> Superset (Visualization)
 ```
