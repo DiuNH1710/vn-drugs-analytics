@@ -34,6 +34,7 @@ services:
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - /var/run/docker.sock:/var/run/docker.sock
+    user: "0:0"
     networks:
       - my_network
     command: >

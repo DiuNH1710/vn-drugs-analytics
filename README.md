@@ -49,6 +49,11 @@ geocode_unique_addresses_dag.py: Enrich addresses with geolocation data.
 
 trigger_dbt_dag.py: Run dbt models after data preparation is complete.
 
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+
 ### 3. dbt
 Used for data transformation and modeling.
 
