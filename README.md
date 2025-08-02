@@ -89,6 +89,8 @@ Drug registration trends over the years.
 Top manufacturers by number of products.
 
 Drugs expiring soon for regulatory monitoring.
+...
+![alt text](vn-drugs-analytics-copy-2025-08-02T09-59-53.046Z.jpg)
 
 ## 📦 Requirements
 Docker & Docker Compose
