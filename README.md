@@ -92,6 +92,13 @@ Drugs expiring soon for regulatory monitoring.
 ...
 ![alt text](vn-drugs-analytics-copy-2025-08-02T09-59-53.046Z.jpg)
 
+Drug Manufacturer Distribution Map (custom-built)
+Superset requires integration with a GeoMap API to render interactive maps. However, since no API key was available, the distribution map of drug manufacturers was built separately using Node.js (for the backend API) and React.js with D3.js (for the frontend visualization). The image below represents the geographical locations of pharmaceutical manufacturers in Vietnam based on geocoded address data.
+
+github:https://github.com/DiuNH1710/geo-map
+
+![alt text](image-3.png)
+
 ## 📦 Requirements
 Docker & Docker Compose
 
